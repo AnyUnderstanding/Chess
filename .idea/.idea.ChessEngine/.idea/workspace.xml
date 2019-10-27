@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93490c81-d6bb-496a-9924-9058d2940549" name="Default Changelist" comment="" />
+    <list default="true" id="93490c81-d6bb-496a-9924-9058d2940549" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ChessEngine/UI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Board.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ChessEngine/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/King.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/UI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Board.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Move.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
@@ -29,20 +51,22 @@
         <option value="$PROJECT_DIR$/ChessEngine/Tower.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Move.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Coordinate.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Program.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Game.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Board.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Board.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/UI.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1SjwwpyP1bhmNDpftPDXc9O5JEn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
@@ -93,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572090556349</updated>
       <workItem from="1572090564008" duration="11898000" />
-      <workItem from="1572105884630" duration="3377000" />
+      <workItem from="1572105884630" duration="8991000" />
     </task>
     <servers />
   </component>
@@ -102,6 +126,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>

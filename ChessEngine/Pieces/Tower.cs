@@ -6,18 +6,14 @@ namespace ChessEngine.Pieces
 {
     public class Tower : Piece
     {
-        public override void move(Coordinate move)
-        {
-            throw new System.NotImplementedException();
-        }
 
-        public override List<Coordinate> getMoves(Piece[,] board, Coordinate position)
+        public override List<Coordinate> getMoves(Piece[,] board, Coordinate position, short currentMove)
         {
             List<Coordinate> possibleMoves = new List<Coordinate>();
             Piece currentPiece = board[position.X, position.Y];
             if (isMate()) return possibleMoves;
 
-            for (int i = 0; i < board.Length; i++)
+            for (byte i = 0; i < board.GetLength(0); i++)
             {
                 if (i == position.Y)
                 {
@@ -38,9 +34,9 @@ namespace ChessEngine.Pieces
                     break;
                 }
             }
-            
-            
-            for (int i = 0; i < board.Length; i++)
+
+
+            for (byte i = 0; i < board.GetLength(1); i++)
             {
                 if (i == position.X)
                 {
@@ -62,6 +58,8 @@ namespace ChessEngine.Pieces
                 }
             }
 
+            lastMoveUpdate = currentMove;
+            moves = possibleMoves;
             return possibleMoves;
         }
 
