@@ -11,7 +11,12 @@ namespace ChessEngine
         {
             createBoard();
             UI ui = new UI();
-            ui.printBoard(board);
+            ui.printBoard(board, new List<Coordinate>());
+            move(new Move(new Coordinate(7,7),new Coordinate(4,7)));
+            ui.printBoard(board, new List<Coordinate>());
+          //  ui.printBoard(board, board[0, 7].getMoves(board, new Coordinate(0, 7), (short) moveHistory.Count));
+
+
         }
 
         private Piece[,] board = new Piece[8, 8];
@@ -19,20 +24,23 @@ namespace ChessEngine
 
         private void move(Move move)
         {
-            Coordinate coordinate = move.Start;
             if (board[move.Start.X, move.Start.Y].move(board, move.End, (short) moveHistory.Count))
             {
                 board[move.End.X, move.End.Y] = board[move.Start.X, move.Start.Y];
                 board[move.Start.X, move.Start.Y] = null;
                 moveHistory.Add(move);
             }
+            else
+            {
+                Console.WriteLine("\nImpossible move l2p");
+            }
         }
 
         private void createBoard()
         {
-            Console.WriteLine(board.Length);
             for (int i = 0; i < board.GetLength(0); i++)
             {
+                break;
                 board[1, i] = new Pawn(true);
                 board[6, i] = new Pawn(false);
             }

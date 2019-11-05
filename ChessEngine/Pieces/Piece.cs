@@ -16,7 +16,6 @@ namespace ChessEngine
             this.isWhite = isWhite;
         }
 
-        protected Coordinate position;
 
         public bool move(Piece[,] board, Coordinate move, short currentMove)
         {
@@ -44,6 +43,5 @@ namespace ChessEngine
 
         public bool IsWhite => isWhite;
 
-        public Coordinate Position => position;
     }
 }

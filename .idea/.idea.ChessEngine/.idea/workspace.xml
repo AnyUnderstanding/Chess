@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93490c81-d6bb-496a-9924-9058d2940549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChessEngine/UI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Board.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/UI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.pdb" afterDir="false" />
     </list>
@@ -29,20 +26,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/King.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/UI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Board.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Move.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Board.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Move.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/King.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/UI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,15 +50,15 @@
         <option value="$PROJECT_DIR$/ChessEngine/Coordinate.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Program.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Game.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Board.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/UI.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Board.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" />
       </list>
     </option>
   </component>
@@ -72,7 +69,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -118,6 +115,9 @@
       <updated>1572090556349</updated>
       <workItem from="1572090564008" duration="11898000" />
       <workItem from="1572105884630" duration="8991000" />
+      <workItem from="1572246762654" duration="2864000" />
+      <workItem from="1572363568542" duration="1867000" />
+      <workItem from="1572429072980" duration="1247000" />
     </task>
     <servers />
   </component>
@@ -131,7 +131,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
