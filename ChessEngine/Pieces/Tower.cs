@@ -6,42 +6,14 @@ namespace ChessEngine.Pieces
 {
     public class Tower : Piece
     {
-        public override List<Coordinate> getMoves(Piece[,] board, Coordinate position, short currentMove)
+        protected override List<Coordinate> getMoves(Piece[,] board, Coordinate position)
         {
-            if (currentMove == lastMoveUpdate)
-            {
-                return moves;
-            }
-
             List<Coordinate> possibleMoves = new List<Coordinate>();
-            if (board[position.X, position.Y] == null) return possibleMoves;
 
             //  if (isMate()) return possibleMoves;
 
-            for (byte i = (byte) position.X; i < board.GetLength(0); i++)
-            {
-                if (i == position.Y)
-                {
-                    continue;
-                }
 
-                if (board[position.X, i] == null)
-                {
-                    possibleMoves.Add(new Coordinate(position.Y, i));
-                }
-                else if (board[position.X, i].IsWhite != isWhite)
-                {
-                    possibleMoves.Add(new Coordinate(position.Y, i));
-                    break;
-                }
-                else if (board[position.X, i].IsWhite == isWhite)
-                {
-                    break;
-                }
-            }
-
-
-            for (byte i = (byte) position.Y; i < board.GetLength(1); i++)
+            for (short i = (short) position.X; i < board.GetLength(0); i++)
             {
                 if (i == position.X)
                 {
@@ -52,42 +24,18 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, position.Y));
                 }
-                else if (board[i, position.Y].IsWhite != isWhite)
+                else if (board[i, position.Y].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
                 {
                     possibleMoves.Add(new Coordinate(i, position.Y));
                     break;
                 }
-                else if (board[i, position.Y].IsWhite == isWhite)
-                {
-                    break;
-                }
             }
 
-
-            for (byte i = (byte) position.X; i > 0; i--)
-            {
-                if (i == position.Y)
-                {
-                    continue;
-                }
-
-                if (board[position.X, i] == null)
-                {
-                    possibleMoves.Add(new Coordinate(position.Y, i));
-                }
-                else if (board[position.X, i].IsWhite != isWhite)
-                {
-                    possibleMoves.Add(new Coordinate(position.Y, i));
-                    break;
-                }
-                else if (board[position.X, i].IsWhite == isWhite)
-                {
-                    break;
-                }
-            }
-
-
-            for (byte i = (byte) position.Y; i > 0; i--)
+            for (short i = (short) position.X; i >= 0; i--)
             {
                 if (i == position.X)
                 {
@@ -98,18 +46,61 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, position.Y));
                 }
-                else if (board[i, position.Y].IsWhite != isWhite)
+                else if (board[i, position.Y].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
                 {
                     possibleMoves.Add(new Coordinate(i, position.Y));
                     break;
                 }
-                else if (board[i, position.Y].IsWhite == isWhite)
+            }
+
+            for (short i = (short) position.Y; i < board.GetLength(1); i++)
+            {
+                if (i == position.Y)
                 {
+                    continue;
+                }
+
+                if (board[position.X, i] == null)
+                {
+                    possibleMoves.Add(new Coordinate(position.X, i));
+                }
+                else if (board[position.X, i].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
+                {
+                    possibleMoves.Add(new Coordinate(position.X, i));
                     break;
                 }
             }
 
-            lastMoveUpdate = currentMove;
+            for (short i = (short) position.Y; i >= 0; i--)
+            {
+                if (i == position.Y)
+                {
+                    continue;
+                }
+
+                if (board[position.X, i] == null)
+                {
+                    possibleMoves.Add(new Coordinate(position.X, i));
+                }
+                else if (board[position.X, i].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
+                {
+                    possibleMoves.Add(new Coordinate(position.X, i));
+                    break;
+                }
+            }
+
             moves = possibleMoves;
             return possibleMoves;
         }

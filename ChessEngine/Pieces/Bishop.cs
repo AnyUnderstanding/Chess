@@ -8,16 +8,135 @@ namespace ChessEngine.Pieces
         {
         }
 
-        public override List<Coordinate> getMoves(Piece[,] board, Coordinate position, short currentMove)
+        protected override List<Coordinate> getMoves(Piece[,] board, Coordinate position)
         {
-            byte translate = 0;
             List<Coordinate> possibleMoves = new List<Coordinate>();
-            Piece currentPiece = board[position.X, position.Y];
-            for (byte i = 0; i < board.GetLength(0); i++)
+            short translateY = (short) position.Y;
+
+            for (short i = (short) position.X; i < board.GetLength(0); i++)
             {
-                if (board[i, translate] == null)possibleMoves.Add(new Coordinate(i,translate));
+                if (translateY >= board.GetLength(1))
+                {
+                    break;
+                }
+
+                if (i == position.X)
+                {
+                    translateY++;
+                    continue;
+                }
+
+                if (board[i, translateY] == null)
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                }
+                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                    break;
+                }
+
+                translateY++;
             }
 
+            translateY = (short) position.Y;
+            for (short i = (short) position.X; i < board.GetLength(0); i++)
+            {
+                if (translateY < 0)
+                {
+                    break;
+                }
+
+                if (i == position.X)
+                {
+                    translateY--;
+                    continue;
+                }
+
+                if (board[i, translateY] == null)
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                }
+                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                    break;
+                }
+
+                translateY--;
+            }
+
+            translateY = (short) position.Y;
+            for (short i = (short) position.X; i >= 0; i--)
+            {
+                if (translateY >= board.GetLength(1))
+                {
+                    break;
+                }
+
+                if (i == position.X)
+                {
+                    translateY++;
+                    continue;
+                }
+
+                if (board[i, translateY] == null)
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                }
+                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                    break;
+                }
+
+                translateY++;
+            }
+
+            translateY = (short) position.Y;
+            for (short i = (short) position.X; i >= 0; i--)
+            {
+                if (translateY < 0)
+                {
+                    break;
+                }
+
+                if (i == position.X)
+                {
+                    translateY--;
+                    continue;
+                }
+
+                if (board[i, translateY] == null)
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                }
+                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                {
+                    break;
+                }
+                else
+                {
+                    possibleMoves.Add(new Coordinate(i, translateY));
+                    break;
+                }
+
+                translateY--;
+            }
+
+            moves = possibleMoves;
             return possibleMoves;
         }
     }

@@ -7,24 +7,33 @@ namespace ChessEngine
 {
     public class Board
     {
-        public Board()
-        {
-            createBoard();
-            UI ui = new UI();
-            ui.printBoard(board, new List<Coordinate>());
-            move(new Move(new Coordinate(7,7),new Coordinate(4,7)));
-            ui.printBoard(board, new List<Coordinate>());
-          //  ui.printBoard(board, board[0, 7].getMoves(board, new Coordinate(0, 7), (short) moveHistory.Count));
-
-
-        }
-
         private Piece[,] board = new Piece[8, 8];
         private List<Move> moveHistory = new List<Move>();
 
-        private void move(Move move)
+        public Piece[,] Board1 => board;
+
+        public Board()
         {
-            if (board[move.Start.X, move.Start.Y].move(board, move.End, (short) moveHistory.Count))
+            createBoard();
+
+            //  ui.printBoard(board, board[7, 7].getMoves(board, new Coordinate(7, 7), (short) moveHistory.Count));
+        }
+
+        public List<Coordinate> getPossibleMoves(Coordinate position)
+        {
+            if (board[position.X, position.Y] == null ||
+                board[position.X, position.Y].IsWhite == ((moveHistory.Count - 1) % 2 == 0))
+
+            {
+                return new List<Coordinate>();
+            }
+
+            return board[position.X, position.Y].getMoves(board, position, (short) moveHistory.Count);
+        }
+
+        public void move(Move move)
+        {
+            if (board[move.Start.X, move.Start.Y].move(board, move, (short) moveHistory.Count)&&board[move.Start.X, move.Start.Y].IsWhite != ((moveHistory.Count - 1) % 2 == 0))
             {
                 board[move.End.X, move.End.Y] = board[move.Start.X, move.Start.Y];
                 board[move.Start.X, move.Start.Y] = null;
@@ -40,7 +49,6 @@ namespace ChessEngine
         {
             for (int i = 0; i < board.GetLength(0); i++)
             {
-                break;
                 board[1, i] = new Pawn(true);
                 board[6, i] = new Pawn(false);
             }

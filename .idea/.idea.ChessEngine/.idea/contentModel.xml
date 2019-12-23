@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_ChessEngine.-1781261613.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_ChessEngine.-934181494.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="ChessEngine" t="IncludeRecursive">
         <e p="Board.cs" t="Include" />
         <e p="ChessEngine.csproj" t="IncludeRecursive" />
         <e p="Coordinate.cs" t="Include" />
         <e p="Game.cs" t="Include" />
+        <e p="GetMoveInstruction.cs" t="Include" />
+        <e p="Instruction.cs" t="Include" />
+        <e p="InstructionType.cs" t="Include" />
         <e p="Move.cs" t="Include" />
+        <e p="MoveInstruction.cs" t="Include" />
         <e p="Pieces" t="Include">
           <e p="Bishop.cs" t="Include" />
           <e p="King.cs" t="Include" />

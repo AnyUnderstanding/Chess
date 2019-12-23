@@ -10,9 +10,10 @@ namespace ChessEngine.Pieces
         {
         }
 
-        public override List<Coordinate> getMoves(Piece[,] board, Coordinate position, short currentMove)
+        protected override List<Coordinate> getMoves(Piece[,] board, Coordinate position)
         {
-            throw new System.NotImplementedException();
+            List<Coordinate> possibleMoves = new List<Coordinate>();
+            return possibleMoves;
         }
     }
 }

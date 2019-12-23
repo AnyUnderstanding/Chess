@@ -6,10 +6,11 @@ namespace ChessEngine
 {
     public abstract class Piece
     {
-        protected bool isWhite;
+        private bool isWhite;
 
         protected List<Coordinate> moves = new List<Coordinate>();
         protected short lastMoveUpdate = -1;
+        protected bool hasMovedBefore = false;
 
         public Piece(bool isWhite)
         {
@@ -17,24 +18,39 @@ namespace ChessEngine
         }
 
 
-        public bool move(Piece[,] board, Coordinate move, short currentMove)
+        public bool move(Piece[,] board, Move move, short currentMove)
         {
             bool moveIsPossible = false;
             if (currentMove != lastMoveUpdate)
             {
-                moves = getMoves(board, move, currentMove);
-                lastMoveUpdate += currentMove;
+                moves = getMoves(board, move.Start, currentMove);
             }
 
             moves.ForEach(i =>
             {
-                if (i.X == move.X && i.Y == move.Y)
+                if (i.X == move.End.X && i.Y == move.End.Y)
                     moveIsPossible = true;
             });
+            if (moveIsPossible)
+            {
+                hasMovedBefore = true;
+            }
             return moveIsPossible;
         }
 
-        public abstract List<Coordinate> getMoves(Piece[,] board, Coordinate position, short currentMove);
+        public List<Coordinate> getMoves(Piece[,] board, Coordinate position, short currentMove)
+        {
+            if (lastMoveUpdate == currentMove)
+            {
+                return moves;
+            }
+
+            moves = getMoves(board, position);
+            lastMoveUpdate = currentMove;
+            return moves;
+        }
+
+        protected abstract List<Coordinate> getMoves(Piece[,] board, Coordinate position);
 
         protected bool isMate()
         {
@@ -42,6 +58,5 @@ namespace ChessEngine
         }
 
         public bool IsWhite => isWhite;
-
     }
 }
