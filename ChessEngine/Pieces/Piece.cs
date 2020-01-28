@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ChessEngine.Pieces;
 
 namespace ChessEngine
 {
@@ -35,6 +36,7 @@ namespace ChessEngine
             {
                 hasMovedBefore = true;
             }
+
             return moveIsPossible;
         }
 
@@ -52,9 +54,28 @@ namespace ChessEngine
 
         protected abstract List<Coordinate> getMoves(Piece[,] board, Coordinate position);
 
-        protected bool isMate()
+        protected bool isMate(Piece[,] board,List<Coordinate> possibleMoves,Coordinate position)
         {
-            throw new NotImplementedException();
+            //searching king
+            King king = null;
+            for (int i = 0; i < board.GetLength(0); i++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    if (board[i, j].GetType() == typeof(King) && board[i, j].IsWhite == isWhite)
+                    {
+                        king = (King) board[i, j];
+                    }
+                }
+            }
+            //creating simulated of possible moves board
+            possibleMoves.ForEach(i =>
+            {
+                Piece[,] simulatedBoard = board;
+                simulatedBoard[i.X, i.Y] = simulatedBoard[position.X, position.Y];
+                simulatedBoard[position.X, position.Y] = null;
+            });
+            return true;
         }
 
         public bool IsWhite => isWhite;

@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93490c81-d6bb-496a-9924-9058d2940549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChessEngine/GetMoveInstruction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Instruction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/InstructionType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/MoveInstruction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/BoardToJson.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Board.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/UI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" afterDir="false" />
@@ -55,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/BoardToJson.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -71,14 +63,16 @@
         <option value="$PROJECT_DIR$/ChessEngine/GetMoveInstruction.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/MoveInstruction.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/UI.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Game.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Board.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/test.json" />
+        <option value="$PROJECT_DIR$/ChessEngine/BoardToJson.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Board.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/UI.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Game.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +83,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -141,8 +135,21 @@
       <workItem from="1576601506356" duration="12558000" />
       <workItem from="1576825645573" duration="425000" />
       <workItem from="1576863785851" duration="20538000" />
-      <workItem from="1577012936404" duration="1201000" />
+      <workItem from="1577012936404" duration="11840000" />
+      <workItem from="1577576996097" duration="1441000" />
+      <workItem from="1578944438995" duration="795000" />
+      <workItem from="1578985278215" duration="1250000" />
+      <workItem from="1578995477363" duration="974000" />
+      <workItem from="1579073575278" duration="619000" />
     </task>
+    <task id="LOCAL-00001" summary="code:)">
+      <created>1577132570506</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577132570506</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="code:)" />
+    <option name="LAST_COMMIT_MESSAGE" value="code:)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -173,19 +182,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Program.cs</url>
-          <line>7</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Program.cs" initialLine="6">
-            <startOffsets>
-              <option value="134" />
-            </startOffsets>
-            <endOffsets>
-              <option value="156" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs</url>
           <line>151</line>
@@ -226,82 +222,30 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Game.cs</url>
-          <line>14</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Game.cs" initialLine="11">
-            <startOffsets>
-              <option value="327" />
-            </startOffsets>
-            <endOffsets>
-              <option value="380" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs</url>
-          <line>21</line>
+          <line>22</line>
           <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" initialLine="21">
             <startOffsets>
-              <option value="493" />
+              <option value="519" />
             </startOffsets>
             <endOffsets>
-              <option value="494" />
+              <option value="520" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs</url>
-          <line>42</line>
+          <line>44</line>
           <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" initialLine="42">
             <startOffsets>
-              <option value="1106" />
+              <option value="1133" />
             </startOffsets>
             <endOffsets>
-              <option value="1140" />
+              <option value="1167" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Game.cs</url>
-          <line>20</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Game.cs" initialLine="20">
-            <startOffsets>
-              <option value="594" />
-            </startOffsets>
-            <endOffsets>
-              <option value="643" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/UI.cs</url>
-          <line>102</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/UI.cs" initialLine="103">
-            <startOffsets>
-              <option value="3910" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3926" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/UI.cs</url>
-          <line>98</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/UI.cs" initialLine="99">
-            <startOffsets>
-              <option value="3746" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3757" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

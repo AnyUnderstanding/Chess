@@ -39,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Board.cs" />
+    <Compile Include="BoardToJson.cs" />
     <Compile Include="Coordinate.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GetMoveInstruction.cs" />
@@ -56,6 +57,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="test.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

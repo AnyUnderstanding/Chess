@@ -16,29 +16,45 @@ namespace ChessEngine.Pieces
             {
                 for (int i = position.X - 1; i <= position.X + 1; i++)
                 {
-                    if (i < 0 || i >= board.GetLength(0))
+                    //Y
+                    if (!checkBounds((short) i, 0, (short) board.GetLength(0)) ||
+                        !checkBounds((short) (translate + position.Y), 0, (short) board.GetLength(1)))
                     {
                         continue;
                     }
+
                     if (board[i, position.Y + translate] == null)
                     {
-                        possibleMoves.Add(new Coordinate(i, position.Y));
-                    }
-                    else if (board[i, position.Y].IsWhite == board[position.X, position.Y].IsWhite)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        possibleMoves.Add(new Coordinate(i, position.Y));
-                        break;
+                        possibleMoves.Add(new Coordinate(i, position.Y + translate));
                     }
                 }
+
+                //X
+                if (checkBounds((short) (translate + position.X), 0, (short) board.GetLength(1)))
+                {
+                    if (board[position.X + translate, position.Y] == null)
+                    {
+                        possibleMoves.Add(new Coordinate(position.X + translate, position.Y));
+                    }
+                }
+
+             
 
                 translate = -1;
             }
 
             return possibleMoves;
+        }
+
+        private bool checkBounds(short x, short lowerBound, short upperBound)
+        {
+            //lowerBound is included upperBound not
+            return x >= lowerBound && x < upperBound;
+        }
+
+        public bool isCheck(List<Piece[,]> boards)
+        {
+            return false;
         }
     }
 }

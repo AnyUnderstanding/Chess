@@ -6,6 +6,7 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="ChessEngine" t="IncludeRecursive">
         <e p="Board.cs" t="Include" />
+        <e p="BoardToJson.cs" t="Include" />
         <e p="ChessEngine.csproj" t="IncludeRecursive" />
         <e p="Coordinate.cs" t="Include" />
         <e p="Game.cs" t="Include" />
@@ -30,6 +31,7 @@
         <e p="UI.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="test.json" t="Include" />
       </e>
       <e p="ChessEngine.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

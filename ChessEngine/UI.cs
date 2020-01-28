@@ -127,19 +127,26 @@ namespace ChessEngine
                 {
                     case ConsoleKey.UpArrow:
                         y--;
+                        if (!checkBounds((short) (y - 1), 0, 8)) y++;
+
                         break;
                     case ConsoleKey.DownArrow:
                         y++;
+                        if (!checkBounds((short) (y - 1), 0, 8)) y--;
+
                         break;
                     case ConsoleKey.LeftArrow:
                         x -= 2;
+                        if (!checkBounds((short) ((x - 1) / 2), 0, 8)) x += 2;
 
                         break;
                     case ConsoleKey.RightArrow:
                         x += 2;
+                        if (!checkBounds((short) ((x - 1) / 2), 0, 8)) x -= 2;
                         break;
                     case ConsoleKey.M:
                         isMove = !isMove;
+
                         if (!isMove)
                         {
                             return null;
@@ -166,6 +173,12 @@ namespace ChessEngine
                     return new Coordinate(y - 1, (x - 1) / 2);
                 }
             }
+        }
+
+        private bool checkBounds(short x, short lowerBound, short upperBound)
+        {
+            //lowerBound is included upperBound not
+            return x >= lowerBound && x < upperBound;
         }
     }
 }
