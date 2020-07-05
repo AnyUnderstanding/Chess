@@ -47,35 +47,56 @@ namespace ChessEngine
                 return moves;
             }
 
-            moves = getMoves(board, position);
+            moves = isMate(board, getMoves(board, position), position);
+            //moves = getMoves(board, position);
             lastMoveUpdate = currentMove;
             return moves;
         }
 
         protected abstract List<Coordinate> getMoves(Piece[,] board, Coordinate position);
 
-        protected bool isMate(Piece[,] board,List<Coordinate> possibleMoves,Coordinate position)
+        protected List<Coordinate> isMate(Piece[,] board, List<Coordinate> possibleMoves, Coordinate position)
         {
-            //searching king
-            King king = null;
-            for (int i = 0; i < board.GetLength(0); i++)
+            //creating simulated board of all possible moves 
+
+            for (short index = 0; index < possibleMoves.Count; index++)
             {
-                for (int j = 0; j < board.GetLength(1); j++)
-                {
-                    if (board[i, j].GetType() == typeof(King) && board[i, j].IsWhite == isWhite)
-                    {
-                        king = (King) board[i, j];
-                    }
-                }
-            }
-            //creating simulated of possible moves board
-            possibleMoves.ForEach(i =>
-            {
-                Piece[,] simulatedBoard = board;
+                Coordinate i = possibleMoves[index];
+                Piece[,] simulatedBoard = (Piece[,]) board.Clone();
                 simulatedBoard[i.X, i.Y] = simulatedBoard[position.X, position.Y];
                 simulatedBoard[position.X, position.Y] = null;
-            });
-            return true;
+                //searching king
+                King king = null;
+                Coordinate kingPosition = null;
+                for (int r = 0; r < simulatedBoard.GetLength(0); r++)
+                {
+                    for (int j = 0; j < simulatedBoard.GetLength(1); j++)
+                    {
+                        if (simulatedBoard[r, j] == null)
+                        {
+                            continue;
+                        }
+
+                        if (simulatedBoard[r, j].GetType() == typeof(King) &&
+                            simulatedBoard[r, j].IsWhite == isWhite)
+                        {
+                            king = (King) simulatedBoard[r, j];
+                            kingPosition = new Coordinate(r, j);
+                        }
+                    }
+                }
+
+                if (king.isCheck(simulatedBoard, kingPosition))
+                {
+                    Coordinate move = possibleMoves[index];
+                    Console.WriteLine(move.X + "-/-" + move.Y);
+                    possibleMoves.RemoveAt(index);
+                    index--;
+                }
+            }
+
+
+            return possibleMoves;
         }
 
         public bool IsWhite => isWhite;

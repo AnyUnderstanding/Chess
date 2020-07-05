@@ -1,52 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="93490c81-d6bb-496a-9924-9058d2940549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChessEngine/BoardToJson.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Board.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/UI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/ChessEngine.pdb" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Sequence" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ChessEngine/UI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Instruction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Board.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Move.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/MoveInstruction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/GetMoveInstruction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/InstructionType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/02D8ECCB-F7D1-4B8E-84A0-A38D587511AA/cc/201da4f4/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/King.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A6767267-DE78-47E1-B6ED-28542D439B42/a7/92a2c294/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/King.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Move.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/InstructionType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/BoardToJson.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/MoveInstruction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/GetMoveInstruction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2B3AB7D-FFF7-46F5-94D2-EF5B16EC3C90/f7/8ff892ba/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Instruction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/9914A5B2-452F-42A1-9258-E46947959739/03/1ed4863b/0200000Epdb.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2B3AB7D-FFF7-46F5-94D2-EF5B16EC3C90/97/8d6dde6f/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -62,43 +89,43 @@
         <option value="$PROJECT_DIR$/ChessEngine/Instruction.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/GetMoveInstruction.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/MoveInstruction.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Bishop.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Queen.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/Knight.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/test.json" />
         <option value="$PROJECT_DIR$/ChessEngine/BoardToJson.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Game.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/test.puml" />
+        <option value="$PROJECT_DIR$/ChessEngine/include.puml" />
+        <option value="$PROJECT_DIR$/ChessEngine/UI.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Board.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/UI.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Game.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1SjwwpyP1bhmNDpftPDXc9O5JEn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34997287" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30005425" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+  <component name="RunManager" selected=".NET Project.Start">
+    <configuration name="Start" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChessEngine/bin/Debug" />
@@ -113,9 +140,31 @@
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.2" />
       <method v="2">
-        <option name="Build" enabled="true" />
+        <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Unnamed" type="DotNetProject" factoryName=".NET Project" nameIsGenerated="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ChessEngine/bin/Debug/ChessEngine.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChessEngine/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.2" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Start" />
+      <item itemvalue=".NET Project.Unnamed" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -141,6 +190,16 @@
       <workItem from="1578985278215" duration="1250000" />
       <workItem from="1578995477363" duration="974000" />
       <workItem from="1579073575278" duration="619000" />
+      <workItem from="1591975158429" duration="1272000" />
+      <workItem from="1592691307148" duration="5620000" />
+      <workItem from="1592736946847" duration="3282000" />
+      <workItem from="1593353287098" duration="405000" />
+      <workItem from="1593353894747" duration="446000" />
+      <workItem from="1593354363348" duration="3141000" />
+      <workItem from="1593769685794" duration="9981000" />
+      <workItem from="1593939074889" duration="127000" />
+      <workItem from="1593939226031" duration="825000" />
+      <workItem from="1593942175201" duration="4098000" />
     </task>
     <task id="LOCAL-00001" summary="code:)">
       <created>1577132570506</created>
@@ -153,7 +212,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -162,18 +221,160 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="code:)" />
     <option name="LAST_COMMIT_MESSAGE" value="code:)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2338" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593939191169">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2338" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593939191169" />
+    <state x="2338" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592695540605" />
+    <state x="1920" y="227" width="1720" height="785" key="DiffContextDialog" timestamp="1593354341859">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="227" width="1720" height="785" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593354341859" />
+    <state x="2649" y="248" width="452" height="545" key="FileChooserDialogImpl" timestamp="1593357372175">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2649" y="248" width="452" height="545" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593357372175" />
+    <state width="1874" height="217" key="GridCell.Tab.0.bottom" timestamp="1593947971952">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971952" />
+    <state width="1874" height="226" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="211" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.987@1920.0.1920.1080" timestamp="1591976430294" />
+    <state width="1874" height="406" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484528" />
+    <state width="1874" height="217" key="GridCell.Tab.0.center" timestamp="1593947971952">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971952" />
+    <state width="1874" height="226" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="211" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.987@1920.0.1920.1080" timestamp="1591976430294" />
+    <state width="1874" height="406" key="GridCell.Tab.0.center/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484528" />
+    <state width="1874" height="217" key="GridCell.Tab.0.left" timestamp="1593947971952">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971952" />
+    <state width="1874" height="226" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="211" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.987@1920.0.1920.1080" timestamp="1591976430294" />
+    <state width="1874" height="406" key="GridCell.Tab.0.left/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484527" />
+    <state width="1874" height="217" key="GridCell.Tab.0.right" timestamp="1593947971952">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971952" />
+    <state width="1874" height="226" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="211" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.987@1920.0.1920.1080" timestamp="1591976430294" />
+    <state width="1874" height="406" key="GridCell.Tab.0.right/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484528" />
+    <state width="1874" height="217" key="GridCell.Tab.1.bottom" timestamp="1593947990660">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947990660" />
+    <state width="1874" height="226" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="406" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484530" />
+    <state width="1874" height="217" key="GridCell.Tab.1.center" timestamp="1593947990660">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.1.center/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947990660" />
+    <state width="1874" height="226" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="406" key="GridCell.Tab.1.center/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484529" />
+    <state width="1874" height="217" key="GridCell.Tab.1.left" timestamp="1593947990660">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.1.left/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947990660" />
+    <state width="1874" height="226" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="406" key="GridCell.Tab.1.left/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484529" />
+    <state width="1874" height="217" key="GridCell.Tab.1.right" timestamp="1593947990660">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.1.right/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947990660" />
+    <state width="1874" height="226" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697235" />
+    <state width="1874" height="406" key="GridCell.Tab.1.right/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484529" />
+    <state width="1874" height="217" key="GridCell.Tab.2.bottom" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.2.bottom/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.2.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.2.bottom/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484530" />
+    <state width="1874" height="217" key="GridCell.Tab.2.center" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.2.center/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.2.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.2.center/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484530" />
+    <state width="1874" height="217" key="GridCell.Tab.2.left" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.2.left/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.2.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.2.left/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484530" />
+    <state width="1874" height="217" key="GridCell.Tab.2.right" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.2.right/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.2.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.2.right/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484530" />
+    <state width="1874" height="217" key="GridCell.Tab.3.bottom" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.3.bottom/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.3.bottom/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.3.bottom/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484532" />
+    <state width="1874" height="217" key="GridCell.Tab.3.center" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.3.center/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.3.center/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.3.center/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484531" />
+    <state width="1874" height="217" key="GridCell.Tab.3.left" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.3.left/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.3.left/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.3.left/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484531" />
+    <state width="1874" height="217" key="GridCell.Tab.3.right" timestamp="1593947971862">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="217" key="GridCell.Tab.3.right/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593947971862" />
+    <state width="1874" height="226" key="GridCell.Tab.3.right/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593814697236" />
+    <state width="1874" height="406" key="GridCell.Tab.3.right/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592772484532" />
+    <state x="2463" y="256" width="824" height="528" key="IDE.errors.dialog" timestamp="1593783025069">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2463" y="256" width="824" height="528" key="IDE.errors.dialog/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593783025069" />
+    <state x="2514" y="175" width="722" height="690" key="RiderGenerateDialog" timestamp="1593772675103">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2514" y="175" width="722" height="690" key="RiderGenerateDialog/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593772675103" />
+    <state x="2369" y="154" width="1022" height="742" key="SettingsEditor" timestamp="1593939492414">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="154" width="1022" height="742" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593939492414" />
+    <state x="2369" y="154" width="1022" height="732" key="SettingsEditor/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593354341643" />
+    <state x="2555" y="134" width="649" height="768" key="find.popup" timestamp="1593939472495">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2555" y="134" width="649" height="768" key="find.popup/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593939472495" />
+    <state x="2544" y="237" key="run.anything.popup" timestamp="1593772753825">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2544" y="237" key="run.anything.popup/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593772753825" />
+    <state x="2544" y="237" key="run.anything.popup/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592695937487" />
+    <state x="2543" y="244" width="672" height="678" key="search.everywhere.popup" timestamp="1593939470921">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="244" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1037@1920.0.1920.1080" timestamp="1593939470921" />
+    <state x="2543" y="244" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.985@1920.0.1920.1080" timestamp="1593771442509" />
+    <state x="2543" y="244" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.28.1920.988@1920.0.1920.1080" timestamp="1592738132953" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -183,69 +384,30 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs</url>
-          <line>151</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" initialLine="151">
+          <url>file://$PROJECT_DIR$/ChessEngine/Pieces/King.cs</url>
+          <line>91</line>
+          <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" initialLine="91">
             <startOffsets>
-              <option value="-1" />
+              <option value="3608" />
             </startOffsets>
             <endOffsets>
-              <option value="-1" />
+              <option value="3629" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs</url>
-          <line>177</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/Tower.cs" initialLine="173">
+          <url>file://$PROJECT_DIR$/ChessEngine/Pieces/King.cs</url>
+          <line>221</line>
+          <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/King.cs" initialLine="216">
             <startOffsets>
-              <option value="-1" />
+              <option value="8003" />
             </startOffsets>
             <endOffsets>
-              <option value="-1" />
+              <option value="8066" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/Pawn.cs" initialLine="13">
-            <startOffsets>
-              <option value="299" />
-            </startOffsets>
-            <endOffsets>
-              <option value="355" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs</url>
-          <line>22</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" initialLine="21">
-            <startOffsets>
-              <option value="519" />
-            </startOffsets>
-            <endOffsets>
-              <option value="520" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs</url>
-          <line>44</line>
-          <properties documentPath="$PROJECT_DIR$/ChessEngine/Pieces/Piece.cs" initialLine="42">
-            <startOffsets>
-              <option value="1133" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1167" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

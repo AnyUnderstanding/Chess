@@ -15,7 +15,6 @@ namespace ChessEngine
         public Board()
         {
             createBoard();
-
             //  ui.printBoard(board, board[7, 7].getMoves(board, new Coordinate(7, 7), (short) moveHistory.Count));
         }
 
@@ -23,11 +22,9 @@ namespace ChessEngine
         {
             if (board[position.X, position.Y] == null ||
                 board[position.X, position.Y].IsWhite == ((moveHistory.Count - 1) % 2 == 0))
-
             {
                 return new List<Coordinate>();
             }
-
             return board[position.X, position.Y].getMoves(board, position, (short) moveHistory.Count);
         }
 
@@ -50,8 +47,9 @@ namespace ChessEngine
             for (int i = 0; i < board.GetLength(0); i++)
             {
                 board[1, i] = new Pawn(true);
-                board[6, i] = new Pawn(false);
+               //board[6, i] = new Pawn(false);
             }
+            board[5, 3] = new Pawn(true);
 
             board[0, 0] = new Tower(true);
             board[7, 0] = new Tower(false);
@@ -60,7 +58,7 @@ namespace ChessEngine
 
             board[0, 1] = new Knight(true);
             board[7, 1] = new Knight(false);
-            board[0, 6] = new Knight(true);
+            board[4, 1] = new Knight(true);
             board[7, 6] = new Knight(false);
 
             board[0, 2] = new Bishop(true);
@@ -69,9 +67,9 @@ namespace ChessEngine
             board[7, 5] = new Bishop(false);
 
             board[0, 3] = new Queen(true);
-            board[7, 3] = new Queen(false);
+          //  board[7, 3] = new Queen(false);
             board[0, 4] = new King(true);
-            board[7, 4] = new King(false);
+            board[5, 2] = new King(false);
         }
     }
 }
