@@ -25,7 +25,7 @@ namespace ChessEngine.Pieces
                             possibleMoves.Add(new Coordinate(position.X + translate, position.Y + translate1));
                         }
                         else if (board[position.X + translate, position.Y + translate1].IsWhite !=
-                                 board[position.X, position.Y].IsWhite)
+                                 IsWhite)
                         {
                             possibleMoves.Add(new Coordinate(position.X + translate, position.Y + translate1));
                         }
@@ -39,7 +39,7 @@ namespace ChessEngine.Pieces
                             possibleMoves.Add(new Coordinate(position.X + translate1, position.Y + translate));
                         }
                         else if (board[position.X + translate1, position.Y + translate].IsWhite !=
-                                 board[position.X, position.Y].IsWhite) 
+                                 IsWhite) 
                         {
                             possibleMoves.Add(new Coordinate(position.X + translate1, position.Y + translate));
                         }

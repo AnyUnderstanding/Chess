@@ -25,16 +25,38 @@ namespace ChessEngine
             {
                 return new List<Coordinate>();
             }
+
             return board[position.X, position.Y].getMoves(board, position, (short) moveHistory.Count);
         }
 
         public void move(Move move)
         {
-            if (board[move.Start.X, move.Start.Y].move(board, move, (short) moveHistory.Count)&&board[move.Start.X, move.Start.Y].IsWhite != ((moveHistory.Count - 1) % 2 == 0))
+            Move possibleMove = board[move.Start.X, move.Start.Y].move(board, move, (short) moveHistory.Count);
+            if (possibleMove.Start.X == -1)
             {
-                board[move.End.X, move.End.Y] = board[move.Start.X, move.Start.Y];
-                board[move.Start.X, move.Start.Y] = null;
-                moveHistory.Add(move);
+                return;
+            }
+
+            if (
+                true) //  board[move.Start.X, move.Start.Y].IsWhite != ((moveHistory.Count - 1) % 2 == 0))
+            {
+                if (possibleMove.GetType() == typeof(CastlingMove))
+                {
+                    int i = possibleMove.Start.Y + (possibleMove.End.Y - possibleMove.Start.Y) / 2;
+                    board[possibleMove.End.X, possibleMove.End.Y] = board[possibleMove.Start.X, possibleMove.Start.Y];
+                    board[possibleMove.Start.X, possibleMove.Start.Y + (possibleMove.End.Y - possibleMove.Start.Y) / 2]
+                        = board[((CastlingMove) possibleMove).Tower.X, ((CastlingMove) possibleMove).Tower.Y];
+                    board[((CastlingMove) possibleMove).Tower.X, ((CastlingMove) possibleMove).Tower.Y] = null;
+                    board[possibleMove.Start.X, possibleMove.Start.Y] = null;
+
+                    moveHistory.Add(possibleMove);
+                }
+                else
+                {
+                    board[possibleMove.End.X, possibleMove.End.Y] = board[possibleMove.Start.X, possibleMove.Start.Y];
+                    board[possibleMove.Start.X, possibleMove.Start.Y] = null;
+                    moveHistory.Add(possibleMove);
+                }
             }
             else
             {
@@ -47,9 +69,9 @@ namespace ChessEngine
             for (int i = 0; i < board.GetLength(0); i++)
             {
                 board[1, i] = new Pawn(true);
-               //board[6, i] = new Pawn(false);
+                board[6, i] = new Pawn(false);
             }
-            board[5, 3] = new Pawn(true);
+
 
             board[0, 0] = new Tower(true);
             board[7, 0] = new Tower(false);
@@ -67,9 +89,9 @@ namespace ChessEngine
             board[7, 5] = new Bishop(false);
 
             board[0, 3] = new Queen(true);
-          //  board[7, 3] = new Queen(false);
+            board[7, 3] = new Queen(false);
             board[0, 4] = new King(true);
-            board[5, 2] = new King(false);
+            board[7, 4] = new King(false);
         }
     }
 }

@@ -27,7 +27,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, position.Y));
                 }
-                else if (board[i, position.Y].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[i, position.Y].IsWhite == IsWhite)
                 {
                     break;
                 }
@@ -49,7 +49,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, position.Y));
                 }
-                else if (board[i, position.Y].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[i, position.Y].IsWhite == IsWhite)
                 {
                     break;
                 }
@@ -71,7 +71,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(position.X, i));
                 }
-                else if (board[position.X, i].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[position.X, i].IsWhite == IsWhite)
                 {
                     break;
                 }
@@ -93,7 +93,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(position.X, i));
                 }
-                else if (board[position.X, i].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[position.X, i].IsWhite == IsWhite)
                 {
                     break;
                 }
@@ -123,7 +123,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, translateY));
                 }
-                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[i, translateY].IsWhite == IsWhite)
                 {
                     break;
                 }
@@ -154,7 +154,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, translateY));
                 }
-                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[i, translateY].IsWhite == IsWhite)
                 {
                     break;
                 }
@@ -185,7 +185,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, translateY));
                 }
-                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[i, translateY].IsWhite == IsWhite)
                 {
                     break;
                 }
@@ -216,7 +216,7 @@ namespace ChessEngine.Pieces
                 {
                     possibleMoves.Add(new Coordinate(i, translateY));
                 }
-                else if (board[i, translateY].IsWhite == board[position.X, position.Y].IsWhite)
+                else if (board[i, translateY].IsWhite == IsWhite)
                 {
                     break;
                 }

@@ -18,26 +18,38 @@ namespace ChessEngine
             this.isWhite = isWhite;
         }
 
+        public bool HasMovedBefore => hasMovedBefore;
 
-        public bool move(Piece[,] board, Move move, short currentMove)
+
+        public Move move(Piece[,] board, Move move, short currentMove)
         {
-            bool moveIsPossible = false;
+            Move possibleMove = new Move(new Coordinate(-1, -1), new Coordinate(-1, -1));
             if (currentMove != lastMoveUpdate)
             {
                 moves = getMoves(board, move.Start, currentMove);
             }
 
+
             moves.ForEach(i =>
             {
                 if (i.X == move.End.X && i.Y == move.End.Y)
-                    moveIsPossible = true;
+                {
+                    if (i.GetType() == typeof(CastlingCoordinate))
+                    {
+                        possibleMove = new CastlingMove(move.Start,move.End,((CastlingCoordinate)i).Tower);
+                    }
+                    else
+                    {
+                        possibleMove = move;
+                    }
+                }
             });
-            if (moveIsPossible)
+            if (possibleMove.Start.X != -1)
             {
                 hasMovedBefore = true;
             }
 
-            return moveIsPossible;
+            return possibleMove;
         }
 
         public List<Coordinate> getMoves(Piece[,] board, Coordinate position, short currentMove)

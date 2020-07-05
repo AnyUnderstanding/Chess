@@ -203,7 +203,6 @@ namespace ChessEngine
                             return new Coordinate(y - 1, (x - 1) / 2);
                         }
 
-                        break;
                     case ConsoleKey.Enter:
                         if (isMove)
                         {
