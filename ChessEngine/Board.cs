@@ -7,6 +7,8 @@ namespace ChessEngine
 {
     public class Board
     {
+        private bool isCheck = false;
+        private bool isMate = false;
         private Piece[,] board = new Piece[8, 8];
         private List<Move> moveHistory = new List<Move>();
 
@@ -17,6 +19,10 @@ namespace ChessEngine
             createBoard();
             //  ui.printBoard(board, board[7, 7].getMoves(board, new Coordinate(7, 7), (short) moveHistory.Count));
         }
+
+        public bool IsCheck => isCheck;
+
+        public bool IsMate => isMate;
 
         public List<Coordinate> getPossibleMoves(Coordinate position)
         {
@@ -37,8 +43,7 @@ namespace ChessEngine
                 return;
             }
 
-            if (
-                true) //  board[move.Start.X, move.Start.Y].IsWhite != ((moveHistory.Count - 1) % 2 == 0))
+            if (board[move.Start.X, move.Start.Y].IsWhite != ((moveHistory.Count - 1) % 2 == 0))
             {
                 if (possibleMove.GetType() == typeof(CastlingMove))
                 {
@@ -57,10 +62,9 @@ namespace ChessEngine
                     board[possibleMove.Start.X, possibleMove.Start.Y] = null;
                     moveHistory.Add(possibleMove);
                 }
-            }
-            else
-            {
-                Console.WriteLine("\nImpossible move l2p");
+                
+                isCheck = board[possibleMove.End.X, possibleMove.End.Y].isCheck(board);
+                isMate = board[possibleMove.End.X, possibleMove.End.Y].isMate(board);
             }
         }
 
@@ -68,8 +72,8 @@ namespace ChessEngine
         {
             for (int i = 0; i < board.GetLength(0); i++)
             {
-                board[1, i] = new Pawn(true);
-                board[6, i] = new Pawn(false);
+                // board[1, i] = new Pawn(true);
+                // board[6, i] = new Pawn(false);
             }
 
 
@@ -78,15 +82,15 @@ namespace ChessEngine
             board[0, 7] = new Tower(true);
             board[7, 7] = new Tower(false);
 
-            board[0, 1] = new Knight(true);
-            board[7, 1] = new Knight(false);
-            board[4, 1] = new Knight(true);
-            board[7, 6] = new Knight(false);
-
-            board[0, 2] = new Bishop(true);
-            board[7, 2] = new Bishop(false);
-            board[0, 5] = new Bishop(true);
-            board[7, 5] = new Bishop(false);
+            // board[0, 1] = new Knight(true);
+            // board[7, 1] = new Knight(false);
+            // board[4, 1] = new Knight(true);
+            // board[7, 6] = new Knight(false);
+            //
+            // board[0, 2] = new Bishop(true);
+            // board[7, 2] = new Bishop(false);
+            // board[0, 5] = new Bishop(true);
+            // board[7, 5] = new Bishop(false);
 
             board[0, 3] = new Queen(true);
             board[7, 3] = new Queen(false);

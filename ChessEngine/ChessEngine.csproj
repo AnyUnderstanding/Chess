@@ -38,6 +38,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ai\AiPlayer.cs" />
+    <Compile Include="Ai\MiniMax.cs" />
+    <Compile Include="Ai\Tree.cs" />
+    <Compile Include="Ai\TreeNode.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="BoardToJson.cs" />
     <Compile Include="CastlingCoordinate.cs" />

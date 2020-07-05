@@ -38,7 +38,7 @@ namespace ChessEngine
             blackPieces.Add(typeof(Pawn), '♟');
         }
 
-        public void printBoard(Piece[,] pBoard, List<Coordinate> pM)
+        public void printBoard(Piece[,] pBoard, List<Coordinate> pM, bool isChess, bool isMate)
         {
             /*
                         StringBuilder sb = new StringBuilder("|_|@|_|@|_|@|_|@|\n" +
@@ -136,6 +136,17 @@ namespace ChessEngine
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("Black\n");
             Console.WriteLine(Convert.ToString((x - 1) / 2) + "|" + Convert.ToString(y - 1));
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            if (isChess && !isMate)
+            {
+                Console.Write("Check\n");
+            }
+
+            if (isMate)
+            {
+                Console.Write("Checkmate\n");
+            }
+
             Console.ForegroundColor = ConsoleColor.Gray;
         }
 

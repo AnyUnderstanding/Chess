@@ -36,7 +36,7 @@ namespace ChessEngine
                 {
                     if (i.GetType() == typeof(CastlingCoordinate))
                     {
-                        possibleMove = new CastlingMove(move.Start,move.End,((CastlingCoordinate)i).Tower);
+                        possibleMove = new CastlingMove(move.Start, move.End, ((CastlingCoordinate) i).Tower);
                     }
                     else
                     {
@@ -59,7 +59,7 @@ namespace ChessEngine
                 return moves;
             }
 
-            moves = isMate(board, getMoves(board, position), position);
+            moves = removeImpossibleMoves(board, getMoves(board, position), position, isWhite);
             //moves = getMoves(board, position);
             lastMoveUpdate = currentMove;
             return moves;
@@ -67,7 +67,39 @@ namespace ChessEngine
 
         protected abstract List<Coordinate> getMoves(Piece[,] board, Coordinate position);
 
-        protected List<Coordinate> isMate(Piece[,] board, List<Coordinate> possibleMoves, Coordinate position)
+        public bool isCheck(Piece[,] board)
+        {
+            (King, Coordinate) king = findKing(board, !isWhite);
+            return king.Item1.isCheck(board, king.Item2);
+        }
+
+        public bool isMate(Piece[,] board)
+        {
+            List<Coordinate> possibleMoves = new List<Coordinate>();
+            for (int r = 0; r < board.GetLength(0); r++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    if (board[r, j] == null || board[r, j].isWhite == isWhite)
+                    {
+                        continue;
+                    }
+
+                    Coordinate cord = new Coordinate(r, j);
+                    possibleMoves = board[r, j].getMoves(board, cord);
+                    int x = removeImpossibleMoves(board, possibleMoves, cord, !isWhite).Count;
+                    if (removeImpossibleMoves(board, possibleMoves, cord, isWhite).Count != 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        protected List<Coordinate> removeImpossibleMoves(Piece[,] board, List<Coordinate> possibleMoves,
+            Coordinate position, bool kingIsWhite)
         {
             //creating simulated board of all possible moves 
 
@@ -77,31 +109,12 @@ namespace ChessEngine
                 Piece[,] simulatedBoard = (Piece[,]) board.Clone();
                 simulatedBoard[i.X, i.Y] = simulatedBoard[position.X, position.Y];
                 simulatedBoard[position.X, position.Y] = null;
-                //searching king
-                King king = null;
-                Coordinate kingPosition = null;
-                for (int r = 0; r < simulatedBoard.GetLength(0); r++)
-                {
-                    for (int j = 0; j < simulatedBoard.GetLength(1); j++)
-                    {
-                        if (simulatedBoard[r, j] == null)
-                        {
-                            continue;
-                        }
 
-                        if (simulatedBoard[r, j].GetType() == typeof(King) &&
-                            simulatedBoard[r, j].IsWhite == isWhite)
-                        {
-                            king = (King) simulatedBoard[r, j];
-                            kingPosition = new Coordinate(r, j);
-                        }
-                    }
-                }
+                (King, Coordinate) king = findKing(simulatedBoard, kingIsWhite);
 
-                if (king.isCheck(simulatedBoard, kingPosition))
+                if (king.Item1.isCheck(simulatedBoard, king.Item2))
                 {
                     Coordinate move = possibleMoves[index];
-                    Console.WriteLine(move.X + "-/-" + move.Y);
                     possibleMoves.RemoveAt(index);
                     index--;
                 }
@@ -109,6 +122,31 @@ namespace ChessEngine
 
 
             return possibleMoves;
+        }
+
+        private (King, Coordinate) findKing(Piece[,] board, bool kingIsWhite)
+        {
+            King king = null;
+            Coordinate kingPosition = null;
+            for (int r = 0; r < board.GetLength(0); r++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    if (board[r, j] == null)
+                    {
+                        continue;
+                    }
+
+                    if (board[r, j].GetType() == typeof(King) &&
+                        board[r, j].IsWhite == kingIsWhite)
+                    {
+                        kingPosition = new Coordinate(r, j);
+                        king = (King) board[r, j];
+                    }
+                }
+            }
+
+            return (king, kingPosition);
         }
 
         public bool IsWhite => isWhite;
