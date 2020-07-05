@@ -87,10 +87,7 @@ namespace ChessEngine.Pieces
                 translate = -2;
             }
 
-            if (position.X == 3 && position.Y == 2)
-            {
-                Console.WriteLine(1);
-            }
+        
 
             for (short i = (short) position.X; i < board.GetLength(0); i++)
             {
@@ -316,6 +313,10 @@ namespace ChessEngine.Pieces
 
                 translateY--;
             }
+            if (position.X == 6 && position.Y == 4)
+            {
+                Console.WriteLine(1);
+            }
 
             translate = (short) (position.X + (board[position.X, position.Y].IsWhite ? 1 : -1));
             if (position.Y + 1 < board.GetLength(0) && board[translate, position.Y + 1] != null &&
@@ -325,9 +326,9 @@ namespace ChessEngine.Pieces
                 return true;
             }
 
-            if (position.Y - 1 >= 0 && board[translate, position.Y + 1] != null &&
-                board[translate, position.Y + 1].GetType() == typeof(Pawn) &&
-                board[translate, position.Y + 1].IsWhite != IsWhite)
+            if (position.Y - 1 >= 0 && board[translate, position.Y - 1] != null &&
+                board[translate, position.Y - 1].GetType() == typeof(Pawn) &&
+                board[translate, position.Y -1].IsWhite != IsWhite)
             {
                 return true;
             }

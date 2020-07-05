@@ -22,7 +22,7 @@ namespace ChessEngine.Pieces
                 //double move
                 if (position.X - 2 >= 0)
                 {
-                    if (board[position.X - 2, position.Y] == null && !hasMovedBefore)
+                    if (board[position.X - 1, position.Y] == null && !hasMovedBefore)
                     {
                         possibleMoves.Add(new Coordinate(position.X - 2, position.Y));
                     }
@@ -66,7 +66,7 @@ namespace ChessEngine.Pieces
 
                 if (position.X + 2 < board.GetLength(0))
                 {
-                    if (board[position.X + 2, position.Y] == null && !hasMovedBefore)
+                    if (board[position.X + 1, position.Y] == null && !hasMovedBefore)
                     {
                         possibleMoves.Add(new Coordinate(position.X + 2, position.Y));
                     }
