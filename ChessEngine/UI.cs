@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using ChessEngine.Pieces;
 
 namespace ChessEngine
 {
@@ -12,6 +13,30 @@ namespace ChessEngine
         private short y = 1;
         private bool isMove = false;
         private Coordinate start;
+
+        private Dictionary<Type, char> whitePieces = new Dictionary<Type, char>();
+        private Dictionary<Type, char> blackPieces = new Dictionary<Type, char>();
+
+        public UI()
+        {
+            whitePieces.Add(typeof(Tower), '♖');
+            blackPieces.Add(typeof(Tower), '♜');
+
+            whitePieces.Add(typeof(Knight), '♘');
+            blackPieces.Add(typeof(Knight), '♞');
+
+            whitePieces.Add(typeof(Bishop), '♗');
+            blackPieces.Add(typeof(Bishop), '♝');
+
+            whitePieces.Add(typeof(Queen), '♕');
+            blackPieces.Add(typeof(Queen), '♛');
+
+            whitePieces.Add(typeof(King), '♔');
+            blackPieces.Add(typeof(King), '♚');
+
+            whitePieces.Add(typeof(Pawn), '♙');
+            blackPieces.Add(typeof(Pawn), '♟');
+        }
 
         public void printBoard(Piece[,] pBoard, List<Coordinate> pM)
         {
@@ -41,13 +66,25 @@ namespace ChessEngine
 
             Console.WriteLine("White");
             Console.ForegroundColor = ConsoleColor.Gray;
+            bool isWhiteSquare = false;
 
             for (int i = 0; i < 8; i++)
             {
+                isWhiteSquare = !isWhiteSquare;
+
                 for (int j = 0; j < 8; j++)
                 {
                     Console.Write("|");
+                    if (isWhiteSquare)
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkGray;
+                    }
+                    else
+                    {
+                        Console.BackgroundColor = ConsoleColor.Black;
+                    }
 
+                    isWhiteSquare = !isWhiteSquare;
                     bool cont = false;
                     pM.ForEach(e =>
                     {
@@ -61,12 +98,15 @@ namespace ChessEngine
                     });
                     if (cont)
                     {
+                        Console.BackgroundColor = ConsoleColor.Black;
                         continue;
                     }
 
                     if (pBoard[i, j] == null)
                     {
                         Console.Write(" ");
+                        Console.BackgroundColor = ConsoleColor.Black;
+
                         continue;
                     }
 
@@ -79,8 +119,15 @@ namespace ChessEngine
                         Console.ForegroundColor = ConsoleColor.Red;
                     }
 
-                    Console.Write(pBoard[i, j].GetType().Name[0]);
+                    if (pBoard[i, j].IsWhite)
+                    {
+                    }
+
+                    Console.Write(pBoard[i, j].IsWhite
+                        ? whitePieces[pBoard[i, j].GetType()]
+                        : blackPieces[pBoard[i, j].GetType()]);
                     Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.BackgroundColor = ConsoleColor.Black;
                 }
 
                 Console.Write("|\n");
