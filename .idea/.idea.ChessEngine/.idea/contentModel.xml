@@ -5,6 +5,7 @@
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_ChessEngine.-1781261613.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="ChessEngine" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
         <e p="Board.cs" t="Include" />
         <e p="BoardToJson.cs" t="Include" />
         <e p="ChessEngine.csproj" t="IncludeRecursive" />
