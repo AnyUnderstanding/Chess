@@ -5,7 +5,7 @@ namespace ChessEngine
 {
     public class Game
     {
-        public void GameLoop()
+        public void gameLoop()
         {
             UI ui = new UI();
             Board board = new Board();
@@ -13,16 +13,16 @@ namespace ChessEngine
 
             while (true)
             {
-                Instruction iNstruction = ui.inputHandler();
+                Instruction instruction = ui.inputHandler();
 
-                if (iNstruction.getType() == InstructionType.getMove)
+                if (instruction.getType() == InstructionType.getMove)
                 {
                     ui.printBoard(board.Board1,
-                        board.getPossibleMoves(((GetMoveInstruction) iNstruction).position), board.IsCheck, board.IsMate);
+                        board.getPossibleMoves(((GetMoveInstruction) instruction).position), board.IsCheck, board.IsMate);
                 }
                 else
                 {
-                    Move move = ((MoveInstruction) iNstruction).Move;
+                    Move move = ((MoveInstruction) instruction).Move;
                     board.move(move);
                     ui.printBoard(board.Board1, new List<Coordinate>(), board.IsCheck, board.IsMate);
                 }
