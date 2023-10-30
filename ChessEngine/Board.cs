@@ -7,8 +7,8 @@ namespace ChessEngine
 {
     public class Board
     {
-        private bool isCheck = false;
-        private bool isMate = false;
+        private bool isCheck;
+        private bool isMate;
         private Piece[,] board = new Piece[8, 8];
         private List<Move> moveHistory = new List<Move>();
 
@@ -17,7 +17,6 @@ namespace ChessEngine
         public Board()
         {
             createBoard();
-            //  ui.printBoard(board, board[7, 7].getMoves(board, new Coordinate(7, 7), (short) moveHistory.Count));
         }
 
         public bool IsCheck => isCheck;
@@ -72,8 +71,8 @@ namespace ChessEngine
         {
             for (int i = 0; i < board.GetLength(0); i++)
             {
-                // board[1, i] = new Pawn(true);
-                // board[6, i] = new Pawn(false);
+                board[1, i] = new Pawn(true);
+                board[6, i] = new Pawn(false);
             }
 
 
@@ -82,15 +81,15 @@ namespace ChessEngine
             board[0, 7] = new Tower(true);
             board[7, 7] = new Tower(false);
 
-            // board[0, 1] = new Knight(true);
-            // board[7, 1] = new Knight(false);
-            // board[4, 1] = new Knight(true);
-            // board[7, 6] = new Knight(false);
-            //
-            // board[0, 2] = new Bishop(true);
-            // board[7, 2] = new Bishop(false);
-            // board[0, 5] = new Bishop(true);
-            // board[7, 5] = new Bishop(false);
+            board[0, 1] = new Knight(true);
+            board[7, 1] = new Knight(false);
+            board[4, 1] = new Knight(true);
+            board[7, 6] = new Knight(false);
+            
+            board[0, 2] = new Bishop(true);
+            board[7, 2] = new Bishop(false);
+            board[0, 5] = new Bishop(true);
+            board[7, 5] = new Bishop(false);
 
             board[0, 3] = new Queen(true);
             board[7, 3] = new Queen(false);
